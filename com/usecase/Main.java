@@ -1,5 +1,6 @@
 package com.usecase;
 
+import java.util.List;
 import java.util.Scanner;
 
 import com.dao.AdminDao;
@@ -191,13 +192,47 @@ public class Main {
 				
 				if(c==1) {
 					EmployeeDao ed1=new EmployeeImpl();
-					System.out.println(ed1.getEmployee());
+					List<Employee> l1=ed.getEmployee();
+					
+					System.out.println("---------------------------------------------------------------------------------------------");  
+					System.out.printf("%7s %10s %10s %10s %20s %15s", "NAME", "PHONE","GENDER","ADDRESS","E-MAIL ID", "PASSWORD","EMPLOYEE ID");  
+					System.out.println();  
+					System.out.println("---------------------------------------------------------------------------------------------");  
+					//iterates over the list   
+					for(Employee employee: l1)  
+					{  
+					System.out.format("%7s %13s %7s %10s %22s %12s", employee.getEname(), employee.getPhone(), employee.getGender(), employee.getAddress(), employee.getEmail(), employee.getPassword(),employee.getEmpId());  
+					System.out.println();  
+					}  
+					System.out.println("----------------------------------------------------------------------------------------------");  
 				}else if(c==2) {
 					WageDao wd=new WageImpl();
-					System.out.println(wd.getWage());
+					List<Wage> l1=wd.getWage();
+					System.out.println("---------------------------------------------------------------------------------------------");  
+					System.out.printf("%7s %20s %20s", "NAME", "AMOUNT", "MONTH");  
+					System.out.println();  
+					System.out.println("---------------------------------------------------------------------------------------------");  
+					//iterates over the list   
+					for(Wage wage: l1)  
+					{  
+					System.out.format("%7s %20s %20s", wage.getEname(),wage.getAmount(),wage.getMonth());  
+					System.out.println();  
+					}  
+					System.out.println("----------------------------------------------------------------------------------------------");  
 				}else if(c==3) {
 					ProjectDao pd=new ProjectImpl();
-					System.out.println(pd.getProject());
+					List<Project> l1=pd.getProject();
+					System.out.println("---------------------------------------------------------------------------------------------");  
+					System.out.printf("%7s %20s %20s", "PROJECT NAME", "COST", "DURATION");  
+					System.out.println();  
+					System.out.println("---------------------------------------------------------------------------------------------");  
+					//iterates over the list   
+					for(Project project: l1)  
+					{  
+					System.out.format("%7s %20s %20s", project.getPname(),project.getCost(),project.getDuration());  
+					System.out.println();  
+					}  
+					System.out.println("----------------------------------------------------------------------------------------------");  
 				}
 			}
 		}
