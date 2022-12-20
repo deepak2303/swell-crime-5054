@@ -30,7 +30,7 @@
 - Project can be assigned.
 - Employee data can be accessed.
 
-## 🚀 Admin
+## 🧠 Admin
 
 -   Admin Registration.<br/>
 
@@ -48,7 +48,7 @@
 
 -   Project can be added.<br/>
 
-## 🚀 Employee
+## 🧑‍💼 Employee
 
 -   Employee Login.<br/>
 
