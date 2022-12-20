@@ -1,6 +1,4 @@
-# swell-crime-5054
-
-
+<img src="https://i.gifer.com/origin/00/00b39bade24cd62da12ad886bfe11d78.gif" align="right" width="150px" height="100px"/>
 
 <h1 align="center">Human Resource Management System</h1> 
 <br />
