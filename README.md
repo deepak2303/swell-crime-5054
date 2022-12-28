@@ -58,7 +58,7 @@
 
 <br/>
 
-
+![Flowchart](./resource/Hrms.jpg)
 
 ## Getting Started
 
